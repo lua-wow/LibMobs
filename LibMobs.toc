@@ -1,0 +1,11 @@
+## Interface: 110005
+## Author: Luaerror
+## Version: 0.1.0
+## Title: LibMobs
+## Notes: Library of important instance mobs
+## Dependencies: LibStub
+
+## X-Website: https://github.com/lua-wow/LibMobs
+## X-Maintainer: pedrozc90
+
+LibMobs.lua
