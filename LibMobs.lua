@@ -88,6 +88,35 @@ lib.mobs = {
     --------------------------------------------------
     -- Battle for Azeroth
     --------------------------------------------------
+    -- The MOTHERLODE!!
+    [1594] = {
+        [130485] = CreatePriority(0, "focus"), -- Mechanized Peacekeeper
+        [130488] = CreatePriority(0, "focus"), -- Mech Jockey
+        [133430] = CreatePriority(0, "focus"), -- Venture Co. Mastermind
+        [134232] = CreatePriority(0, "focus"), -- Hired Assassin
+        [136643] = CreatePriority(0, "focus"), -- Azerite Extractor
+        [130635] = CreatePriority(0, "caster"), -- Stonefury
+        [130661] = CreatePriority(0, "caster"), -- Venture Co. Earthshaper
+        [133432] = CreatePriority(0, "caster"), -- Venture Co. Alchemist
+        [136470] = CreatePriority(0, "caster"), -- Refreshment Vendor
+        [133482] = CreatePriority(0, "frontal"), -- Crawler Mine
+        [134012] = CreatePriority(0, "frontal"), -- Taskmaster Askari
+        [129802] = CreatePriority(0), -- Earthrager
+        [130435] = CreatePriority(0), -- Addled Thu
+        [130436] = CreatePriority(0), -- Off-Duty Laborer
+        [130437] = CreatePriority(0), -- Mine Rat
+        [130653] = CreatePriority(0), -- Wanton Sapper
+        [132056] = CreatePriority(0), -- Venture Co. Skyscorcher
+        [133463] = CreatePriority(0), -- Venture Co. War Machine
+        [133963] = CreatePriority(0), -- Test Subject
+        [134005] = CreatePriority(0), -- Shalebiter
+        [136934] = CreatePriority(0), -- Weapons Tester
+        [137029] = CreatePriority(0), -- Ordnance Specialist
+        [129214] = CreatePriority(0, "boss"), -- Coin-Operated Crowd Pummeler
+        [129227] = CreatePriority(0, "boss"), -- Azerokk
+        [129231] = CreatePriority(0, "boss"), -- Rixxa Fluxflame
+        [129232] = CreatePriority(0, "boss"), -- Mogul Razdunk
+    },
     -- Siege of Boralus
     [1822] = {
         [128969] = CreatePriority(5, "caster", true), -- Ashvane Commander
@@ -126,6 +155,26 @@ lib.mobs = {
         [138254] = CreatePriority(0), -- Irontide Powdershot
         [138255] = CreatePriority(0), -- Ashvane Spotter
         [138464] = CreatePriority(0), -- Ashvane Deckhand
+    },
+    -- Operation: Mechagon
+    [2097] = {
+        [144293] = CreatePriority(0, "focus"), -- Waste Processing Unit
+        [236033] = CreatePriority(0, "focus"), -- Metal Gunk
+        [151649] = CreatePriority(0, "focus"), -- Defense Bot Mk I
+        [144298] = CreatePriority(0, "focus"), -- Defense Bot Mk III
+        [144299] = CreatePriority(0, "focus"), -- Workshop Defender
+        [151657] = CreatePriority(0, "caster"), -- Bomb Tonk
+        [144295] = CreatePriority(0, "caster"), -- Mechagon Mechanic
+        [151773] = CreatePriority(0), -- Junkyard D.O.G.
+        [144303] = CreatePriority(0), -- G.U.A.R.D.
+        [144294] = CreatePriority(0), -- Mechagon Tinkerer
+        [144296] = CreatePriority(0), -- Spider
+        [144246] = CreatePriority(0, "boss"), -- K.U.-J.0
+        [144248] = CreatePriority(0, "boss"), -- Head Machinist Sparkflux
+        [150396] = CreatePriority(0, "boss"), -- Aerial Unit R-21/X
+        [144249] = CreatePriority(0, "boss"), -- Omega Buster
+        [145185] = CreatePriority(0, "boss"), -- Gnomercy 4.U.
+        [151476] = CreatePriority(0, "boss"), -- Blastatron X-80
     },
 
     --------------------------------------------------
@@ -193,6 +242,21 @@ lib.mobs = {
         [173714] = CreatePriority(0), -- Mistveil Nightblossom
         [173720] = CreatePriority(0), -- Mistveil Gorgegullet
     },
+    -- Theater of Pain
+    [2293] = {
+        [174197] = CreatePriority(0, "caster"), -- Battlefield Ritualist
+        [164506] = CreatePriority(0, "caster"), -- Ancient Captain
+        [160495] = CreatePriority(0, "caster"), -- Maniacal Soulbinder
+        [170882] = CreatePriority(0, "caster"), -- Bone Magus
+        [174210] = CreatePriority(0, "caster"), -- Blighted Sludge-Spewer
+        [170690] = CreatePriority(0, "caster"), -- Diseased Horror
+        [169893] = CreatePriority(0, "frontal"), -- Nefarious Darkspeaker
+        [163086] = CreatePriority(0, "frontal"), -- Rancid Gasbag
+        [164463] = CreatePriority(0, "boss"), -- Paceran the Virulent
+        [162329] = CreatePriority(0, "boss"), -- Xav the Unfallen
+        [162309] = CreatePriority(0, "boss"), -- Kul'Tharok
+        [165946] = CreatePriority(0, "boss"), -- Mordretha, the Endless Empress
+    },
 
     --------------------------------------------------
     -- Dragonflight
@@ -236,42 +300,55 @@ lib.mobs = {
         [209801] = CreatePriority(7, "frontal"), -- Quartermaster Koratite
         [207186] = CreatePriority(7, "frontal"), -- Unruly Stormrook
         [214419] = CreatePriority(7, "frontal"), -- Void Cursed Crusher
+
+        [209230] = CreatePriority(0, "boss"), -- Kyrioss
     },
     -- Priory of the Sacred Frame
     [2649] = {
-        [206697] = CreatePriority(9, "caster", true), -- Devout Priest
-        [206698] = CreatePriority(8, "caster", true), -- Fanatical Conjurer
-        [211289] = CreatePriority(8, "caster", true), -- Taener Duelmal
-        [212827] = CreatePriority(8, "caster", true), -- High Priest Aemya
-        [221760] = CreatePriority(8, "caster", true), -- Risen Mage
         [206704] = CreatePriority(7, "focus", true), -- Ardente Paladin
         [206710] = CreatePriority(7, "focus", true), -- Lightspawn
         [211290] = CreatePriority(7, "focus", true), -- Elaena Emberlanz
         [211291] = CreatePriority(7, "focus", true), -- Sergeant Shaynemail
         [212826] = CreatePriority(7, "focus", true), -- Guard Captain Suleyman
         [212831] = CreatePriority(7, "focus", true), -- Forge Master Damian
-        [217658] = CreatePriority(7, "focus", true), -- Sir Braunpyke
+        [217658] = CreatePriority(7, "focus", true), -- Sir Beqwraunpyke
+        [206697] = CreatePriority(9, "caster", true), -- Devout Priest
+        [206698] = CreatePriority(8, "caster", true), -- Fanatical Conjurer
+        [211289] = CreatePriority(8, "caster", true), -- Taener Duelmal
+        [212827] = CreatePriority(8, "caster", true), -- High Priest Aemya
+        [221760] = CreatePriority(8, "caster", true), -- Risen Mage
+        [206694] = CreatePriority(0), -- Fervent Sharpshooter
+        [206696] = CreatePriority(0), -- Arathi Knight
+        [206705] = CreatePriority(0), -- Arathi Footman (Shield)
         [207949] = CreatePriority(0), -- Zaelous Templar
         [212835] = CreatePriority(0), -- Risen Footman
-        [206705] = CreatePriority(0), -- Arathi Footman (Shield)
-        [206696] = CreatePriority(0), -- Arathi Knight
-        [206694] = CreatePriority(0), -- Fervent Sharpshooter
-
-        -- testing
-
-        [206705] = CreatePriority(0, nil, true), -- Arathi Footman (Shield)
+        [207946] = CreatePriority(0, "boss"), -- Captain Dailcry
+        [207939] = CreatePriority(0, "boss"), -- Baron Braunpyke
+        [207940] = CreatePriority(0, "boss"), -- Prioress Murrpray
     },
     -- Darkflame Cleft
     [2651] = {
+        [208450] = CreatePriority(7, "focus", true), -- Wandering Candle
+        [210539] = CreatePriority(7, "focus", true), -- Corridor Creeper
+        [212411] = CreatePriority(7, "focus", true), -- Torchsnarl
+        [213751] = CreatePriority(8, "focus", true), -- Dynamite Mine Cart
+        [220616] = CreatePriority(7, "focus", true), -- Corridor Sleeper
+        [208456] = CreatePriority(7, "caster", true), -- Shuffling Horror
         [210812] = CreatePriority(8, "caster", true), -- Royal Wicklighter
         [210818] = CreatePriority(8, "caster", true), -- Lowly Moleherd
+        [213008] = CreatePriority(7, "caster", true), -- Wriggling Darkspawn
         [220815] = CreatePriority(8, "caster", true), -- Blazing Fiend
-        [208450] = CreatePriority(7, "focus", true), -- Wandering Candle
-        [208456] = CreatePriority(7, "focus", true), -- Shuffling Horror
-        [212411] = CreatePriority(7, "focus", true), -- Torchsnarl
+        [211121] = CreatePriority(0, "frontal"), -- Rank Overseer
         [212412] = CreatePriority(0, "frontal"), -- Sootsnout
-        -- [211121] = CreatePriority(0, "frontal"), -- Rank Overseer
-        -- [213913] = CreatePriority(0, "caster"), -- Kobold Flametender
+        [208457] = CreatePriority(0), -- Skittering Darkness
+        [210810] = CreatePriority(0), -- Menial Laborer
+        [211977] = CreatePriority(0), -- Pack Mole
+        [212383] = CreatePriority(0), -- Kobold Taskworker
+        [213913] = CreatePriority(0), -- Kobold Flametender (caster)
+        [210153] = CreatePriority(0, "boss"), -- Ol'Waxbeard
+        [208743] = CreatePriority(0, "boss"), -- Blazikon
+        [208745] = CreatePriority(0, "boss"), -- The Candle King
+        [208747] = CreatePriority(0, "boss"), -- The Darkness
     },
     -- The Stonevault
     [2652] = {
@@ -328,16 +405,27 @@ lib.mobs = {
     },
     -- Cinderbrew Meadery
     [2661] = {
-        [218671] = CreatePriority(0, "caster"), -- Venture Co. Pyromaniac
-        [214673] = CreatePriority(0, "caster"), -- Flavor Scientist
-        [222964] = CreatePriority(0, "caster"), -- Flavor Scientist
-        [220141] = CreatePriority(0, "caster"), -- Royal Jelly Purveyor
-        [223423] = CreatePriority(0, "frontal"), -- Careless Hopgoblin
-        [210264] = CreatePriority(0, "frontal"), -- Bee Wrangler
-        [220946] = CreatePriority(0, "frontal"), -- Venture Co. Honey Harvester
-        [210269] = CreatePriority(0, "frontal"), -- Hired Muscle
         [214697] = CreatePriority(0, "focus"), -- Chef Chewie
+        [214920] = CreatePriority(0, "focus"), -- Tasting Room Attendant
         [220368] = CreatePriority(0, "focus"), -- Failed Batch
+        [214673] = CreatePriority(0, "caster"), -- Flavor Scientist
+        [218671] = CreatePriority(0, "caster"), -- Venture Co. Pyromaniac
+        [220141] = CreatePriority(0, "caster"), -- Royal Jelly Purveyor
+        [222964] = CreatePriority(0, "caster"), -- Flavor Scientist
+        [210264] = CreatePriority(0, "frontal"), -- Bee Wrangler
+        [210269] = CreatePriority(0, "frontal"), -- Hired Muscle
+        [220946] = CreatePriority(0, "frontal"), -- Venture Co. Honey Harvester
+        [223423] = CreatePriority(0, "frontal"), -- Careless Hopgoblin
+        [210265] = CreatePriority(0), -- Worker Bee
+        [210270] = CreatePriority(0), -- Brew Drop
+        [214668] = CreatePriority(0), -- Venture Co. Patron
+        [218865] = CreatePriority(0), -- Bee-let
+        [219588] = CreatePriority(0), -- Yes Man
+        [220060] = CreatePriority(0), -- Taste Tester
+        [210271] = CreatePriority(0, "boss"), -- Brewmaster Aldryr
+        [210267] = CreatePriority(0, "boss"), -- I'pa
+        [218002] = CreatePriority(0, "boss"), -- Benk Buzzbee
+        [214661] = CreatePriority(0, "boss"), -- Goldie Baronbottom
     },
     -- The Dawnbreaker
     [2662] = {
@@ -393,6 +481,32 @@ lib.mobs = {
         [224731] = CreatePriority(0), -- Web Marauder
         [228361] = CreatePriority(0), -- Agile Pursuer
         [220423] = CreatePriority(0), -- Retired Lord Vul'azak
+    },
+    -- Operation: Floodgate
+    [2773] = {
+        [228144] = CreatePriority(0, "focus"), -- Darkfuse Soldier
+        [231325] = CreatePriority(0, "focus"), -- Darkfuse Jumpstarter
+        [229069] = CreatePriority(0, "caster"), -- Mechadrone Sniper
+        [230748] = CreatePriority(0, "caster"), -- Darkfuse Bloodwarper
+        [231223] = CreatePriority(0, "caster"), -- Disturbed Kelp
+        [231312] = CreatePriority(0, "caster"), -- Venture Co. Electrician
+        [231380] = CreatePriority(0, "caster"), -- Undercrawler
+        [231496] = CreatePriority(0, "caster"), -- Venture Co. Diver
+        [228424] = CreatePriority(0, "frontal"), -- Darkfuse Mechadrone
+        [229686] = CreatePriority(0, "frontal"), -- Venture Co. Surveyor
+        [230740] = CreatePriority(0, "frontal"), -- Shreddinator 3000
+        [231197] = CreatePriority(0, "frontal"), -- Bubbles
+        [231385] = CreatePriority(0, "frontal"), -- Darkfuse Inspector
+        [227145] = CreatePriority(0), -- Waterworks Crocolisk
+        [229251] = CreatePriority(0), -- Venture Co. Architect
+        [229252] = CreatePriority(0), -- Darkfuse Hyena
+        [231014] = CreatePriority(0), -- Loaderbot
+        [231497] = CreatePriority(0), -- Bombshell Crab
+        [226398] = CreatePriority(0, "boss"), -- Big M.O.M.M.A.
+        [226396] = CreatePriority(0, "boss"), -- Swampface
+        [226402] = CreatePriority(0, "boss"), -- Bront
+        [226403] = CreatePriority(0, "boss"), -- Kezza Quickfuse
+        [226404] = CreatePriority(0, "boss"), -- Geezle Gigazap
     }
 }
 
