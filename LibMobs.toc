@@ -1,6 +1,6 @@
-## Interface: 110107
+## Interface: 110200
 ## Author: Luaerror
-## Version: 0.1.0
+## Version: 1.0.0
 ## Title: LibMobs
 ## Notes: Library of important instance mobs
 ## Dependencies: LibStub

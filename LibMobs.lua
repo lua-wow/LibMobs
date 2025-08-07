@@ -1,12 +1,13 @@
 local MAJOR, MINOR = "LibMobs", 1
 assert(LibStub, MAJOR .. " requires LibStub")
+
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
 if not lib then return end
 
 -- Blizzard
 local UnitGUID = _G.UnitGUID
 
--- reference: https://wowpedia.fandom.com/wiki/WOW_PROJECT_ID
+-- reference: https://warcraft.wiki.gg/wiki/WOW_PROJECT_ID
 -- LE_EXPANSION_LEVEL_CURRENT
 local LE_EXPANSION_CLASSIC = _G.LE_EXPANSION_CLASSIC or 0                               -- Vanilla / Classic Era
 local LE_EXPANSION_BURNING_CRUSADE = _G.LE_EXPANSION_BURNING_CRUSADE or 1               -- The Burning Crusade
@@ -25,6 +26,7 @@ local isClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 local isTBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 local isWrath = WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
 local isCata = WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC
+local isMoP = WOW_PROJECT_ID == WOW_PROJECT_MISTS_CLASSIC
 
 -- Mine
 function lib:print(...)
@@ -256,6 +258,81 @@ lib.mobs = {
         [162329] = CreatePriority(0, "boss"), -- Xav the Unfallen
         [162309] = CreatePriority(0, "boss"), -- Kul'Tharok
         [165946] = CreatePriority(0, "boss"), -- Mordretha, the Endless Empress
+    },
+    -- Halls of Atonement
+    [2294] = {
+        [164562] = CreatePriority(0, "focus"), -- Depraved Houndmaster
+        [164557] = CreatePriority(0, "focus"), -- Shard of Halkias
+        [165529] = CreatePriority(0, "caster"), -- Depraved Collector
+        [165414] = CreatePriority(0, "caster"), -- Depraved Obliterator
+        [164363] = CreatePriority(0, "caster"), -- Undying Stonefiend
+        [167876] = CreatePriority(0, "caster"), -- Inquisitor Sigar
+        [167607] = CreatePriority(0, "frontal"), -- Stoneborn Slasher
+        [165515] = CreatePriority(), -- Depraved Darkblade
+        [164563] = CreatePriority(), -- Vicious Gargon
+        [165415] = CreatePriority(), -- Toiling Groundskeeper
+        [167612] = CreatePriority(), -- Stoneborn Reaver
+        [167611] = CreatePriority(), -- Stoneborn Eviscerator
+        [167610] = CreatePriority(), -- Stonefiend Anklebiter
+        [164558] = CreatePriority(0, "boss"), -- Halkias, the Sin-Stained Goliath (Boss)
+        [164185] = CreatePriority(0, "boss"), -- Echelon (Boss)
+        [164560] = CreatePriority(0, "boss"), -- High Adjudicator Aleez (Boss)
+        [164218] = CreatePriority(0, "boss"), -- Lord Chamberlain (Boss)
+    },
+    -- Tazavesh: Streets of Wonder
+    [2441] = {
+        -- Streets of Wonder
+        [176394] = CreatePriority(), -- P.O.S.T. Worker
+        [176395] = CreatePriority(0, "caster"), -- Overloaded Mailemental
+        [176396] = CreatePriority(), -- Defective Sorter
+        [176565] = CreatePriority(0, "caster"), -- Disruptive Patron
+        [177807] = CreatePriority(), -- Customs Security
+        [177808] = CreatePriority(), -- Armored Overseer
+        [177816] = CreatePriority(), -- Interrogation Specialist
+        [177817] = CreatePriority(0, "caster"), -- Support Office
+        [178392] = CreatePriority(0, "focus"), -- Gatewarden Zo'mazz
+        [178394] = CreatePriority(), -- Cartel Lackey
+        [179269] = CreatePriority(0, "caster"), -- Oasis Security
+        [179334] = CreatePriority(0, "caster"), -- Portalmancer Zo'honn
+        [179821] = CreatePriority(0, "focus"), -- Commander Zo'far
+        [179837] = CreatePriority(0, "focus"), -- Tracker Zo'korss
+        [179840] = CreatePriority(), -- Market Peacekeeper
+        [179841] = CreatePriority(0, "caster"), -- Veteran Sparkcaster
+        [179893] = CreatePriority(), -- Cartel Skulker
+        [180091] = CreatePriority(0, "frontal"), -- Ancient Core Hound
+        [180335] = CreatePriority(), -- Cartel Smuggler
+        [180336] = CreatePriority(0, "caster"), -- Cartel Wiseguy
+        [180348] = CreatePriority(), -- Cartel Muscle
+        [180567] = CreatePriority(), -- Frenzied Nightclaw
+        [246285] = CreatePriority(0, "focus"), -- Bazaar Overseer
+    
+        [175616] = CreatePriority(0, "boss"), -- Zo'phex the Sentinel (Boss)
+        [176556] = CreatePriority(0, "boss"), -- Alcruux (Boss)
+        [176705] = CreatePriority(0, "boss"), -- Venza Goldfuse (Boss)
+        [176555] = CreatePriority(0, "boss"), -- Achillite (Boss)
+        [176563] = CreatePriority(0, "boss"), -- Zo'gron (Boss)
+        [175646] = CreatePriority(0, "boss"), -- P.O.S.T Master (Boss)
+        [175806] = CreatePriority(0, "boss"), -- So'azmi (Boss)
+
+        -- So'leash's Gambit
+        [176551] = CreatePriority(0, "caster"), -- Vault Purifier
+        [177500] = CreatePriority(), -- Corsair Brute
+        [178139] = CreatePriority(), -- Murkbrine Shellcrusher
+        [178141] = CreatePriority(), -- Murkbrine Scalebinder
+        [178142] = CreatePriority(0, "caster"), -- Murkbrine Fishmancer
+        [178165] = CreatePriority(), -- Coastwalker Goliath
+        [178171] = CreatePriority(), -- Stormforged Guardian
+        [179386] = CreatePriority(), -- Corsair Officer
+        [179388] = CreatePriority(0, "caster"), -- Hourglass Tidesage
+        [179399] = CreatePriority(), -- Drunk Pirate
+        [180015] = CreatePriority(), -- Burly Deckhand
+        [180429] = CreatePriority(0, "frontal"), -- Adorned Starseer
+        [180431] = CreatePriority(0, "caster"), -- Devoted Ritualist
+        [180432] = CreatePriority(), -- Devoted Accomplice
+        
+        [175663] = CreatePriority(0, "boss"), -- Hylbrande
+        [175546] = CreatePriority(0, "boss"), -- Timecap'n Hooktail
+        [177269] = CreatePriority(0, "boss"), -- So'leah
     },
 
     --------------------------------------------------
@@ -507,6 +584,26 @@ lib.mobs = {
         [226402] = CreatePriority(0, "boss"), -- Bront
         [226403] = CreatePriority(0, "boss"), -- Kezza Quickfuse
         [226404] = CreatePriority(0, "boss"), -- Geezle Gigazap
+    },
+    -- Eco'Dome Al'dani
+    [2830] = {
+        [236995] = CreatePriority(0, "focus"), -- Ravenous Destroyer
+        [242631] = CreatePriority(0, "focus"), -- Overcharged Sentinel
+        [242209] = CreatePriority(0, "caster"), -- Overgorge Mite
+        [234962] = CreatePriority(0, "caster"), -- Wastelander Farstalker
+        [234957] = CreatePriority(0, "caster"), -- Wastelander Ritualist
+        [234955] = CreatePriority(0, "caster"), -- Wastelander Pactspeaker
+        [235151] = CreatePriority(0, "caster"), -- K'aresh Elemental
+        [234883] = CreatePriority(0, "frontal"), -- Voracious Gorger
+        [234960] = CreatePriority(0, "frontal"), -- Tamed Ruinstalker
+        [234872] = CreatePriority(0), -- Wastelander Phaseblade
+        [234912] = CreatePriority(0), -- Ravaging Scavenger (Enrage)
+        [234918] = CreatePriority(0), -- Wastes Creeper
+        [245092] = CreatePriority(0), -- Burrowing Creeper
+        [234893] = CreatePriority(0, "boss"), -- Azhiccar (Boss)
+        [234933] = CreatePriority(0, "boss"), -- Taah'bat (Boss)
+        [237514] = CreatePriority(0, "boss"), -- A'wazj (Boss)
+        [234935] = CreatePriority(0, "boss"), -- Soul-Scribe (Boss)
     }
 }
 
