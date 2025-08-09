@@ -1,4 +1,4 @@
-## Interface: 110200
+## Interface: 11507, 50500, 110200
 ## Author: Luaerror
 ## Version: 1.0.0
 ## Title: LibMobs
@@ -8,4 +8,4 @@
 ## X-Website: https://github.com/lua-wow/LibMobs
 ## X-Maintainer: pedrozc90
 
-LibMobs.lua
+LibMobs.xml
