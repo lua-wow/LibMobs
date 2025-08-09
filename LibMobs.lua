@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibMobs", 1
+local MAJOR, MINOR = "LibMobs", 10100
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
