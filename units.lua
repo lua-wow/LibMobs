@@ -52,27 +52,98 @@ lib.units = {
     --------------------------------------------------
     -- Mists of Pandaria
     --------------------------------------------------
+    -- Pandaria
+    [870] = {
+        -- [65450] = CreatePriority(0, "frontal"), -- Ancient Guardian
+    },
+
     -- Temple of the Jade Serpent
-    [960 ] = {},
+    [960] = {
+        [59547] = CreatePriority(0, "focus"), -- Jiang
+        [65317] = CreatePriority(0, "focus"), -- Xiang
+        [59546] = CreatePriority(0, "caster"), -- The Talking Fish
+        [59553] = CreatePriority(0, "caster"), -- The Songbird Queen
+        [59545] = CreatePriority(0, "focus"), -- The Golben Beetle
+        [59552] = CreatePriority(), -- The Crybaby Hozen
+        [59544] = CreatePriority(), -- The Nodding Tiger
+
+        [57109] = CreatePriority(0, "caster"), -- Minion of Doubt
+        [65362] = CreatePriority(0, "caster"), -- Minion of Doubt
+    },
     -- Stormstout Brewery
-    [961 ] = {},
+    [961] = {
+        [56862] = CreatePriority(0, "focus"), -- Drunken Hozen Brawler
+        [59522] = CreatePriority(0, "focus"), -- Sudsy Brew Alemental
+        [56924] = CreatePriority(0, "frontal"), -- Inflamed Hozen Brawler
+        [59605] = CreatePriority(), -- Sodden Hozen Brawler
+        [59494] = CreatePriority(), -- Yeasty Brew Alemental
+        [59518] = CreatePriority(), -- Bloated Brew Alemental
+    },
     -- Gate of the Setting Sun
-    [962 ] = {},
+    [962] = {
+        [59800] = CreatePriority(0, "focus"), -- Krikthik Rager
+        [59801] = CreatePriority(0, "caster"), -- Krikthik Wind Shaper
+        [56930] = CreatePriority(0, "caster"), -- Krikthik Swarm Bringer
+    },
     -- Shado-Pan Monastery
-    [959 ] = {},
+    [959] = {
+        [59751] = CreatePriority(0, "focus"), -- Shado-Pan Warden (Stun)
+        [65414] = CreatePriority(0, "caster"), -- Ethereal Sha
+        [56763] = CreatePriority(0, "caster"), -- Regenerating Sha (Heals)
+        [58803] = CreatePriority(0, "caster"), -- Residual Hatred
+        [58810] = CreatePriority(0, "caster"), -- Fragment of Hatred
+        [56765] = CreatePriority(0, "frontal" ), -- Destroying Sha
+        [58807] = CreatePriority(), -- Vestige of Hatred
+    },
     -- Siege of Niuzao Temple
     [1011] = {
+        [61436] = CreatePriority(0, "focus"), -- Sikthik Bladedancer
         [61929] = CreatePriority(0, "caster"), -- Sikthik Amber Weaver
         [67093] = CreatePriority(0, "caster"), -- Sikthik Battle Mender
     },
     -- Mogu'shan Palace
-    [994 ] = {},
+    [994 ] = {
+        [61945] = CreatePriority(0, "focus"), -- Gurthan Iron Maw (Intimidation [123646] - Stun)
+        [61240] = CreatePriority(0, "focus"), -- Glintrok Skulker
+        [61946] = CreatePriority(0, "caster"), -- Harthak Stormcaller
+        [61392] = CreatePriority(0, "caster" ), -- Harthak Flameseeker
+        [61239] = CreatePriority(0, "caster"), -- Glintrok Oracle
+        [61242] = CreatePriority(0, "frontal"), -- Glintrok Ironhide
+        
+        [61243] = CreatePriority(0, "boss"), -- Gekkan
+        [61337] = CreatePriority(0, "frontal"), -- Glintrok Ironhide
+        [61338] = CreatePriority(0, "focus"), -- Glintrok Skulker
+        [61339] = CreatePriority(0, "caster"), -- Glintrok Oracle
+    },
     -- Scholomance
-    [1007] = {},
+    [1007] = {
+        [59467] = CreatePriority(0, "focus"), -- Candlestick Mage
+        [58757] = CreatePriority(0, "caster"), -- Scholomance Acolyte
+        [59193] = CreatePriority(0, "frontal"), -- Boneweaver
+    },
     -- Scarlet Halls
-    [1001] = {},
+    [1001] = {
+        [58684] = CreatePriority(0, "focus"), -- Scarlet Scourge Hewer (Seal of Blood)
+        [59240] = CreatePriority(0, "focus"), -- Scarlet Hall Guardian (Slash Armor)
+        [58685] = CreatePriority(0, "caster" ), -- Scarlet Evangelist
+        [58756] = CreatePriority(0, "caster" ), -- Scarlet Evoker
+        [59372] = CreatePriority(0, "caster"), -- Scarlet Scholar
+        [58683] = CreatePriority(0, "frontal"), -- Scarlet Myrmidon
+        [58998] = CreatePriority(), -- Scarlet Defender
+    },
     -- Scarlet Monastery
-    [1004] = {},
+    [1004] = {
+        [58555] = CreatePriority(0, "focus"), -- Scarlet Fanatic
+        [59705] = CreatePriority(0, "caster"), -- Scarlet Flamethrower
+        [58569] = CreatePriority(0, "caster"), -- Scarlet Purifier
+        [58590] = CreatePriority(0, "caster"), -- Scarlet Zealot
+        [58605] = CreatePriority(), -- Scarlet Judicator
+
+        [59789] = CreatePriority(0, "boss"), -- Thalnos the Soulrender
+        [59223] = CreatePriority(0, "boss"), -- Brother Korloff
+        [60040] = CreatePriority(0, "boss"), -- Commander Durand
+        [3977] = CreatePriority(0, "boss"), -- High Inquisitor Whitemane
+    },
 
     --------------------------------------------------
     -- Battle for Azeroth
