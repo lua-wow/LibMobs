@@ -340,29 +340,29 @@ lib.units = {
     -- Tazavesh: Streets of Wonder
     [2441] = {
         -- Streets of Wonder
-        [176394] = CreatePriority(), -- P.O.S.T. Worker
+        [178392] = CreatePriority(0, "focus"), -- Gatewarden Zo'mazz
+        [179821] = CreatePriority(0, "focus"), -- Commander Zo'far
+        [179837] = CreatePriority(0, "focus"), -- Tracker Zo'korss
+        [246285] = CreatePriority(0, "focus"), -- Bazaar Overseer
         [176395] = CreatePriority(0, "caster"), -- Overloaded Mailemental
-        [176396] = CreatePriority(), -- Defective Sorter
         [176565] = CreatePriority(0, "caster"), -- Disruptive Patron
+        [177817] = CreatePriority(0, "caster"), -- Support Office
+        [179269] = CreatePriority(0, "caster"), -- Oasis Security
+        [179334] = CreatePriority(0, "caster"), -- Portalmancer Zo'honn
+        [179841] = CreatePriority(0, "caster"), -- Veteran Sparkcaster
+        [180336] = CreatePriority(0, "caster"), -- Cartel Wiseguy
+        [180091] = CreatePriority(0, "frontal"), -- Ancient Core Hound
+        [176394] = CreatePriority(), -- P.O.S.T. Worker
+        [176396] = CreatePriority(), -- Defective Sorter
         [177807] = CreatePriority(), -- Customs Security
         [177808] = CreatePriority(), -- Armored Overseer
         [177816] = CreatePriority(), -- Interrogation Specialist
-        [177817] = CreatePriority(0, "caster"), -- Support Office
-        [178392] = CreatePriority(0, "focus"), -- Gatewarden Zo'mazz
         [178394] = CreatePriority(), -- Cartel Lackey
-        [179269] = CreatePriority(0, "caster"), -- Oasis Security
-        [179334] = CreatePriority(0, "caster"), -- Portalmancer Zo'honn
-        [179821] = CreatePriority(0, "focus"), -- Commander Zo'far
-        [179837] = CreatePriority(0, "focus"), -- Tracker Zo'korss
         [179840] = CreatePriority(), -- Market Peacekeeper
-        [179841] = CreatePriority(0, "caster"), -- Veteran Sparkcaster
         [179893] = CreatePriority(), -- Cartel Skulker
-        [180091] = CreatePriority(0, "frontal"), -- Ancient Core Hound
         [180335] = CreatePriority(), -- Cartel Smuggler
-        [180336] = CreatePriority(0, "caster"), -- Cartel Wiseguy
         [180348] = CreatePriority(), -- Cartel Muscle
         [180567] = CreatePriority(), -- Frenzied Nightclaw
-        [246285] = CreatePriority(0, "focus"), -- Bazaar Overseer
     
         [175616] = CreatePriority(0, "boss"), -- Zo'phex the Sentinel (Boss)
         [176556] = CreatePriority(0, "boss"), -- Alcruux (Boss)
@@ -374,18 +374,18 @@ lib.units = {
 
         -- So'leash's Gambit
         [176551] = CreatePriority(0, "caster"), -- Vault Purifier
+        [178142] = CreatePriority(0, "caster"), -- Murkbrine Fishmancer
+        [179388] = CreatePriority(0, "caster"), -- Hourglass Tidesage
+        [180431] = CreatePriority(0, "caster"), -- Devoted Ritualist
+        [180429] = CreatePriority(0, "frontal"), -- Adorned Starseer
         [177500] = CreatePriority(), -- Corsair Brute
         [178139] = CreatePriority(), -- Murkbrine Shellcrusher
         [178141] = CreatePriority(), -- Murkbrine Scalebinder
-        [178142] = CreatePriority(0, "caster"), -- Murkbrine Fishmancer
         [178165] = CreatePriority(), -- Coastwalker Goliath
         [178171] = CreatePriority(), -- Stormforged Guardian
         [179386] = CreatePriority(), -- Corsair Officer
-        [179388] = CreatePriority(0, "caster"), -- Hourglass Tidesage
         [179399] = CreatePriority(), -- Drunk Pirate
         [180015] = CreatePriority(), -- Burly Deckhand
-        [180429] = CreatePriority(0, "frontal"), -- Adorned Starseer
-        [180431] = CreatePriority(0, "caster"), -- Devoted Ritualist
         [180432] = CreatePriority(), -- Devoted Accomplice
         
         [175663] = CreatePriority(0, "boss"), -- Hylbrande
