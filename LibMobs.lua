@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibMobs", 10100
+local MAJOR, MINOR = "LibMobs", 10101
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
@@ -6,6 +6,7 @@ if not lib then return end
 
 -- Blizzard
 local UnitGUID = _G.UnitGUID
+local issecretvalue = _G.issecretvalue or function() return false end -- Retail only
 
 -- reference: https://warcraft.wiki.gg/wiki/WOW_PROJECT_ID
 -- LE_EXPANSION_LEVEL_CURRENT
@@ -57,7 +58,7 @@ lib.units = lib.units or {}
     * spawnUID      - a unique identifier for the specific instance or spawn of this NPC. Differentiates between multiple spawns of the same NPC type. (string)
 ]]
 function lib:ParseCreatureGUID(guid)
-    if not guid then
+    if not guid or issecretvalue(guid) then
         return nil
     end
 
