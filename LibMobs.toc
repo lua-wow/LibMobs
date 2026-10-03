@@ -1,8 +1,9 @@
-## Interface: 11507, 50500, 110200, 120005
+## Interface: 11507, 50500, 110200, 120100
 ## Author: Luaerror
 ## Version: 1.1.0
 ## Title: LibMobs
 ## Notes: Library of important instance mobs
+## AllowLoadGameType: standard, camelot
 ## Dependencies: LibStub
 
 ## X-Website: https://github.com/lua-wow/LibMobs
