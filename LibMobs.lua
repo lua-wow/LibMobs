@@ -116,7 +116,7 @@ end
 
 function lib:UnitRole(unit)
     local guid = UnitGUID(unit)
-    if guid then
+    if not issecretvalue(guid) and guid then
         local guidInfo = self:ParseCreatureGUID(guid)
         if guidInfo then
             local mobInfo = self:GetCreature(guidInfo.instanceID, guidInfo.npcID)
