@@ -293,7 +293,6 @@ lib.units = {
         [166276] = CreatePriority(0), -- Mistveil Guardian
         [166301] = CreatePriority(0), -- Mistveil Stalker
         [166304] = CreatePriority(0), -- Mistveil Stinger
-        [166304] = CreatePriority(0), -- Mistveil Stinger
         [167113] = CreatePriority(0), -- Spinemaw Acidgullet
         [167116] = CreatePriority(0), -- Spinemaw Reaver
         [167117] = CreatePriority(0), -- Spinemaw Larva
